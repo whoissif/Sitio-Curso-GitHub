@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matemáticas para la Economía I</title>
+<meta name="description" content="Mini curso interactivo de la Hoja 1: desigualdades, relaciones de orden y funciones, con teoría descargable y guías paso a paso.">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="brand" href="index.html"><span class="dot"></span>Matemáticas para la Economía I</a>
+  <div class="crumbs"><a href="examenes.html">Exámenes de años anteriores</a></div>
+</nav>
+
+<div class="hero">
+  <div class="eyebrow">Matemáticas I (ADE) · Tema 1 · Hoja 1</div>
+  <h1>Matemáticas para la Economía I</h1>
+  <p class="lead">Mini curso interactivo con la teoría del Tema 1 y una guía paso a paso para los 17 ejercicios de la Hoja 1, organizados en tres bloques: desigualdades y valor absoluto, relaciones de orden, y funciones. Cada apartado incluye una pista con el método teórico y, si la necesitas, la resolución completa. Tu progreso se guarda automáticamente en este navegador.</p>
+</div>
+
+<div class="wrap" style="max-width:760px;margin:0 auto;">
+
+  <div class="overall">
+    <div class="ring-text">
+      <div class="big" id="overallLabel">0 / 0 apartados resueltos</div>
+      <div class="small">Progreso conjunto de los tres bloques</div>
+    </div>
+    <div style="flex:1;min-width:160px;">
+      <div class="progress-track"><div class="progress-fill" id="overallFill"></div></div>
+    </div>
+  </div>
+
+  <div class="modules">
+
+    <a class="module-card" id="card-1" href="modulo-1.html">
+      <div class="mc-top">
+        <div class="mc-num">Bloque 1 · Ejercicios 1–4</div>
+        <div class="mc-status" id="status-1">0 / 0</div>
+      </div>
+      <h3>Desigualdades y valor absoluto</h3>
+      <p>Propiedades del valor absoluto, desigualdades con varios tramos, y la desigualdad triangular.</p>
+      <div class="mc-track"><div class="mc-fill" id="fill-1"></div></div>
+    </a>
+
+    <a class="module-card" id="card-2" href="modulo-2.html">
+      <div class="mc-top">
+        <div class="mc-num">Bloque 2 · Ejercicios 5–6</div>
+        <div class="mc-status" id="status-2">0 / 0</div>
+      </div>
+      <h3>Relaciones de orden y orden de Pareto</h3>
+      <p>Conjuntos de nivel de sen, cos, exponencial y logaritmo; orden parcial de Pareto en R², máximos, mínimos, maximales y minimales.</p>
+      <div class="mc-track"><div class="mc-fill" id="fill-2"></div></div>
+    </a>
+
+    <a class="module-card" id="card-3" href="modulo-3.html">
+      <div class="mc-top">
+        <div class="mc-num">Bloque 3 · Ejercicios 7–17</div>
+        <div class="mc-status" id="status-3">0 / 0</div>
+      </div>
+      <h3>Funciones</h3>
+      <p>Dominio, imagen, composición, transformaciones gráficas, monotonía, funciones inversas, paridad y periodicidad.</p>
+      <div class="mc-track"><div class="mc-fill" id="fill-3"></div></div>
+    </a>
+
+  </div>
+
+  <a class="module-card" href="examenes.html" style="margin-bottom:14px;">
+    <div class="mc-top">
+      <div class="mc-num">Práctica con exámenes reales</div>
+    </div>
+    <h3>Exámenes de años anteriores</h3>
+    <p>20 convocatorias de Enero y Junio, de 2019 a 2026, con solución cuando está disponible. Para practicar una vez repasada la teoría y los ejercicios de los tres bloques.</p>
+  </a>
+
+  <div class="resources">
+    <h3>Recursos descargables</h3>
+    <ul>
+      <li><a href="recursos/Teoria_Bloque1_Hoja1_Desigualdades_ValorAbsoluto.docx">Teoría Bloque 1 — Desigualdades y valor absoluto (.docx)</a></li>
+      <li><a href="recursos/Teoria_Bloque2_Hoja1_RelacionesOrden.docx">Teoría Bloque 2 — Relaciones de orden (.docx)</a></li>
+      <li><a href="recursos/Teoria_Bloque3_Hoja1_Funciones.docx">Teoría Bloque 3 — Funciones (.docx)</a></li>
+      <li><a href="examenes.html">Banco de exámenes de convocatorias anteriores (2019–2026)</a></li>
+    </ul>
+  </div>
+
+  <footer>Curso de estudio generado a partir de la Hoja 1 y el Tema 1 de teoría.</footer>
+
+</div>
+
+<script src="assets/data-bloque1.js"></script>
+<script src="assets/data-bloque2.js"></script>
+<script src="assets/data-bloque3.js"></script>
+<script src="assets/course.js"></script>
+<script>
+(function(){
+  const modules = [
+    { n:1, DATA: DATA_BLOQUE1, key:"bloque1-progress" },
+    { n:2, DATA: DATA_BLOQUE2, key:"bloque2-progress" },
+    { n:3, DATA: DATA_BLOQUE3, key:"bloque3-progress" },
+  ];
+  let overallDone = 0, overallTotal = 0;
+  modules.forEach(m=>{
+    const { done, total } = countModuleProgress(m.DATA, m.key);
+    overallDone += done; overallTotal += total;
+    const pct = total ? Math.round((done/total)*100) : 0;
+    document.getElementById("status-"+m.n).textContent = done+" / "+total;
+    document.getElementById("fill-"+m.n).style.width = pct+"%";
+    if(done === total && total > 0){
+      document.getElementById("card-"+m.n).classList.add("complete");
+    }
+  });
+  const overallPct = overallTotal ? Math.round((overallDone/overallTotal)*100) : 0;
+  document.getElementById("overallLabel").textContent = overallDone+" / "+overallTotal+" apartados resueltos";
+  document.getElementById("overallFill").style.width = overallPct+"%";
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloque 2 · Relaciones de orden — Matemáticas para la Economía I</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="brand" href="index.html"><span class="dot"></span>Matemáticas para la Economía I</a>
+  <div class="crumbs"><a href="index.html">Inicio</a> / Bloque 2 · <a href="examenes.html">Exámenes</a></div>
+</nav>
+
+<div class="wrap">
+
+<header class="top">
+  <div class="eyebrow">Matemáticas I · Hoja 1 · Bloque 2</div>
+  <h1>Relaciones de orden y orden de Pareto</h1>
+  <p class="sub">Guía paso a paso para los ejercicios 5 y 6: conjuntos de nivel de sen, cos, exponencial y logaritmo, y el orden de Pareto en R².</p>
+  <div class="progress-row">
+    <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+    <div class="progress-label" id="progressLabel">0 / 0 resueltos</div>
+  </div>
+  <nav class="tabs" id="tabs"></nav>
+</header>
+
+<div class="downloads">
+  <a href="recursos/Teoria_Bloque2_Hoja1_RelacionesOrden.docx">⬇ Descargar teoría (Word)</a>
+</div>
+
+<details class="theory" id="theoryBox">
+  <summary>Repaso teórico rápido <span class="chev">▸</span></summary>
+  <div class="theory-body">
+    <h4>Orden total vs. orden parcial</h4>
+    <ul>
+      <li>Orden total: cualquier par de elementos se puede comparar (es el caso de ≤ en R).</li>
+      <li>Orden parcial: hay pares que no se pueden comparar (es el caso del orden de Pareto ≤P en R²).</li>
+    </ul>
+    <h4>Máximo/mínimo vs. maximales/minimales</h4>
+    <ul>
+      <li>Máximo de S: un único elemento de S que es «mayor o igual» que todos los demás. No siempre existe.</li>
+      <li>Maximal de S: un elemento de S tal que ningún otro de S es estrictamente mayor. Puede haber varios en orden parcial.</li>
+      <li>En orden TOTAL, máximo y maximal coinciden. En orden PARCIAL, pueden no coincidir.</li>
+    </ul>
+    <h4>Orden de Pareto en el plano</h4>
+    <ul>
+      <li><span class="math">(a,b) ≤P (c,d)  ⇔  a≤c  y  b≤d</span></li>
+      <li>Máximo: el «punto ideal» (mayor x posible, mayor y posible) solo es máximo si además pertenece a la región.</li>
+      <li>Maximales: frontera donde, al recorrerla, x crece mientras y decrece (o viceversa) — son incomparables entre sí.</li>
+    </ul>
+  </div>
+</details>
+
+<div class="videos">
+  <h3>Repaso en vídeo</h3>
+  <p class="videos-note">Vídeos del canal de YouTube <a href="https://www.youtube.com/@MatematicasprofeAlex" target="_blank" rel="noopener">Matemáticas profe Alex</a> para repasar la teoría de este bloque antes de resolver los ejercicios.</p>
+  <div class="video-list">
+    <a href="https://www.youtube.com/watch?v=ZTRETZaSx0s" target="_blank" rel="noopener"><span class="yt-ico">▶</span><span class="v-title">Ecuaciones trigonométricas | Introducción (útil para el ejercicio 5, sen/cos)</span><span class="v-tag">52:01</span></a>
+    <a href="https://www.youtube.com/watch?v=EiiXAh8_3oo" target="_blank" rel="noopener"><span class="yt-ico">▶</span><span class="v-title">Ecuaciones trigonométricas | Ejemplo 1</span><span class="v-tag">15:42</span></a>
+    <a href="https://www.youtube.com/watch?v=IOz5tIoV3ko" target="_blank" rel="noopener"><span class="yt-ico">▶</span><span class="v-title">Gráfico del seno y coseno</span><span class="v-tag">17:02</span></a>
+    <a href="https://www.youtube.com/watch?v=IhsZKreUPE0" target="_blank" rel="noopener"><span class="yt-ico">▶</span><span class="v-title">Función exponencial | Características (útil para el ejercicio 5, exp)</span><span class="v-tag">28:39</span></a>
+    <a href="https://www.youtube.com/watch?v=C0vUje9Uduc" target="_blank" rel="noopener"><span class="yt-ico">▶</span><span class="v-title">Función logarítmica | Gráfica, dominio y rango (útil para el ejercicio 5, ln)</span><span class="v-tag">17:16</span></a>
+  </div>
+  <p class="videos-missing">El canal no tiene vídeos sobre el orden de Pareto ni sobre órdenes parciales en R² (ejercicio 6): es un contenido específico de Matemáticas para la Economía que no forma parte de un canal generalista de preuniversitario. Repasa ese apartado con la teoría descargable de arriba.</p>
+</div>
+
+<div id="panels"></div>
+
+<div class="module-nav">
+  <a href="modulo-1.html"><span class="mn-label">◂ Anterior</span><span class="mn-title">Bloque 1 · Desigualdades</span></a>
+  <a class="next" href="modulo-3.html"><span class="mn-label">Siguiente ▸</span><span class="mn-title">Bloque 3 · Funciones</span></a>
+</div>
+
+<footer>Guía de estudio generada a partir de la Hoja 1 y el Tema 1 de teoría.</footer>
+</div>
+
+<script src="assets/data-bloque2.js"></script>
+<script src="assets/course.js"></script>
+<script>renderModule(DATA_BLOQUE2, "bloque2-progress");</script>
+</body>
+</html>

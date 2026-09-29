@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloque 1 · Desigualdades y valor absoluto — Matemáticas para la Economía I</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="brand" href="index.html"><span class="dot"></span>Matemáticas para la Economía I</a>
+  <div class="crumbs"><a href="index.html">Inicio</a> / Bloque 1 · <a href="examenes.html">Exámenes</a></div>
+</nav>
+
+<div class="wrap">
+
+<header class="top">
+  <div class="eyebrow">Matemáticas I · Hoja 1 · Bloque 1</div>
+  <h1>Desigualdades y valor absoluto</h1>
+  <p class="sub">Guía paso a paso para los ejercicios 1 a 4. Cada apartado tiene una pista con el método teórico y, si la necesitas, la resolución completa.</p>
+  <div class="progress-row">
+    <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+    <div class="progress-label" id="progressLabel">0 / 0 resueltos</div>
+  </div>
+  <nav class="tabs" id="tabs"></nav>
+</header>
+
+<div class="downloads">
+  <a href="recursos/Teoria_Bloque1_Hoja1_Desigualdades_ValorAbsoluto.docx">⬇ Descargar teoría (Word)</a>
+</div>
+
+<details class="theory" id="theoryBox">
+  <summary>Repaso teórico rápido <span class="chev">▸</span></summary>
+  <div class="theory-body">
+    <h4>Propiedad clave del valor absoluto (p &gt; 0)</h4>
+    <ul>
+      <li><span class="math">|a| ≤ p  ⇔  −p ≤ a ≤ p</span> — una condición doble (intersección).</li>
+      <li><span class="math">|a| ≥ p  ⇔  a ≥ p  ∨  a ≤ −p</span> — dos condiciones separadas por "o" (unión).</li>
+      <li>Válido igual cambiando ≤ por &lt; y ≥ por &gt;.</li>
+    </ul>
+    <h4>Otras propiedades útiles</h4>
+    <ul>
+      <li><span class="math">|a|² = a²</span> — permite quitar valores absolutos elevando al cuadrado.</li>
+      <li><span class="math">−|a| ≤ a ≤ |a|</span></li>
+      <li>Desigualdad triangular: <span class="math">|a + b| ≤ |a| + |b|</span></li>
+      <li>Si <span class="math">a² ≤ b²</span>, entonces <span class="math">|a| ≤ |b|</span></li>
+    </ul>
+    <h4>Reglas de manipulación</h4>
+    <ul>
+      <li>Al multiplicar o dividir una desigualdad por un número negativo, se invierte el sentido.</li>
+      <li>Con varios valores absolutos, divide la recta real en tramos según los puntos donde cada expresión interior cambia de signo, y resuelve por casos.</li>
+      <li>Une las soluciones con "∨" (unión ∪) y las combina con "∧" (intersección ∩) según la estructura de la desigualdad.</li>
+    </ul>
+  </div>
+</details>
+
+<div class="videos">
+  <h3>Repaso en vídeo</h3>
+  <p class="videos-note">Vídeos del canal de YouTube <a href="https://www.youtube.com/@MatematicasprofeAlex" target="_blank" rel="noopener">Matemáticas profe Alex</a> para repasar la teoría de este bloque antes de resolver los ejercicios.</p>
+  <div class="video-list">
+    <a href="https://www.youtube.com/watch?v=y9vDsarVxtg" target="_blank" rel="noopener"><span class="yt-ico">▶</span><span class="v-title">Inecuaciones | Introducción, conceptos básicos</span><span class="v-tag">9:19</span></a>
+    <a href="https://www.youtube.com/watch?v=p8NP1YjPY-E" target="_blank" rel="noopener"><span class="yt-ico">▶</span><span class="v-title">Inecuaciones con valor absoluto | Introducción (parte 1)</span><span class="v-tag">9:45</span></a>
+    <a href="https://www.youtube.com/watch?v=58JOBNfGaDY" target="_blank" rel="noopener"><span class="yt-ico">▶</span><span class="v-title">Inecuaciones con valor absoluto | Introducción (parte 2)</span><span class="v-tag">9:10</span></a>
+    <a href="https://www.youtube.com/watch?v=Bfb0efPKb-0" target="_blank" rel="noopener"><span class="yt-ico">▶</span><span class="v-title">Inecuaciones con valor absoluto | Ejemplo 1</span><span class="v-tag">6:10</span></a>
+    <a href="https://www.youtube.com/watch?v=qciUZ4Xev5c" target="_blank" rel="noopener"><span class="yt-ico">▶</span><span class="v-title">Inecuaciones con valor absoluto | Ejemplo 2</span><span class="v-tag">6:02</span></a>
+    <a href="https://www.youtube.com/watch?v=LCcBLxlHX1c" target="_blank" rel="noopener"><span class="yt-ico">▶</span><span class="v-title">Inecuaciones con valor absoluto | Ejemplo 3</span><span class="v-tag">6:15</span></a>
+    <a href="https://www.youtube.com/watch?v=ip7CqvtNTGE" target="_blank" rel="noopener"><span class="yt-ico">▶</span><span class="v-title">Inecuaciones con valor absoluto | Ejemplo 4</span><span class="v-tag">7:48</span></a>
+    <a href="https://www.youtube.com/watch?v=-DESHpxLH8c" target="_blank" rel="noopener"><span class="yt-ico">▶</span><span class="v-title">Inecuaciones racionales | Ejemplo 1 (útil para el apartado 1e)</span><span class="v-tag">19:16</span></a>
+  </div>
+</div>
+
+<div id="panels"></div>
+
+<div class="module-nav">
+  <a href="index.html"><span class="mn-label">◂ Volver</span><span class="mn-title">Inicio del curso</span></a>
+  <a class="next" href="modulo-2.html"><span class="mn-label">Siguiente ▸</span><span class="mn-title">Bloque 2 · Relaciones de orden</span></a>
+</div>
+
+<footer>Guía de estudio generada a partir de la Hoja 1 y el Tema 1 de teoría.</footer>
+</div>
+
+<script src="assets/data-bloque1.js"></script>
+<script src="assets/course.js"></script>
+<script>renderModule(DATA_BLOQUE1, "bloque1-progress");</script>
+</body>
+</html>
