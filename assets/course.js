@@ -72,6 +72,7 @@ function renderModule(DATA, storageKey){
         card.classList.toggle("done", cb.checked);
         saveProgress();
         updateProgressBar();
+        if(cb.checked) celebrate(card);
       });
 
       panel.appendChild(card);
@@ -118,4 +119,28 @@ function countModuleProgress(DATA, storageKey){
     });
   });
   return { done, total };
+}
+
+// Small reward when an exercise is marked as solved (confetti + toast).
+const CHEERS = ["¡Bien! 🔥", "¡Otro más! 💪", "¡Vas a por todas! 🚀", "¡Crack! ⚡", "¡Imparable! 🎯"];
+function celebrate(card){
+  if(window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const colors = ["#6C4CF1", "#FF4D8D", "#00C2A8", "#FFC940", "#4B9BFF"];
+  const r = card.getBoundingClientRect();
+  for(let i = 0; i < 28; i++){
+    const c = document.createElement("i");
+    c.className = "confetti";
+    c.style.left = (r.left + Math.random() * r.width) + "px";
+    c.style.top = Math.max(0, r.top - 10) + "px";
+    c.style.background = colors[i % colors.length];
+    c.style.animationDelay = (Math.random() * .25) + "s";
+    c.style.animationDuration = (1 + Math.random() * .9) + "s";
+    document.body.appendChild(c);
+    setTimeout(() => c.remove(), 2400);
+  }
+  const t = document.createElement("div");
+  t.className = "toast";
+  t.textContent = CHEERS[Math.floor(Math.random() * CHEERS.length)];
+  document.body.appendChild(t);
+  setTimeout(() => t.remove(), 1600);
 }
