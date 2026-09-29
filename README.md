@@ -1,6 +1,6 @@
 # Matemáticas para la Economía I
 
-Mini curso interactivo de la Hoja 1 (Tema 1: desigualdades, relaciones de orden y funciones), con teoría descargable en Word, guías paso a paso para los 17 ejercicios, vídeos de repaso y un banco de exámenes de convocatorias anteriores.
+Mini curso interactivo de la Hoja 1 (Tema 1: desigualdades, relaciones de orden y funciones), con teoría descargable en PDF, guías paso a paso para los 17 ejercicios, vídeos de repaso y un banco de exámenes de convocatorias anteriores.
 
 ## Estructura del sitio
 
@@ -19,9 +19,9 @@ assets/
   data-bloque2.js     ← contenido del Bloque 2
   data-bloque3.js     ← contenido del Bloque 3
 recursos/
-  Teoria_Bloque1_Hoja1_Desigualdades_ValorAbsoluto.docx
-  Teoria_Bloque2_Hoja1_RelacionesOrden.docx
-  Teoria_Bloque3_Hoja1_Funciones.docx
+  Teoria_Bloque1_Hoja1_Desigualdades_ValorAbsoluto.pdf
+  Teoria_Bloque2_Hoja1_RelacionesOrden.pdf
+  Teoria_Bloque3_Hoja1_Funciones.pdf
 examenes/
   2019-enero-enunciado.pdf, 2019-enero-solucion.pdf, ... (20 PDFs, ver examenes.html)
 ```
