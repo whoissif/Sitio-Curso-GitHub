@@ -34,15 +34,6 @@ El banco de exámenes (`examenes.html`) recoge 20 documentos de convocatorias de
 
 El progreso se guarda con `localStorage` en el navegador de quien lo usa: es personal y local, no se sincroniza entre dispositivos ni se envía a ningún sitio.
 
-## Cómo publicarlo en GitHub Pages
-
-1. Crea el repositorio en GitHub (por ejemplo, `matematicas-para-la-economia-1`) y sube todo el contenido de esta carpeta a la rama `main`, manteniendo `index.html` en la raíz del repositorio.
-2. En el repositorio, ve a **Settings → Pages**.
-3. En "Build and deployment", elige **Deploy from a branch**.
-4. Selecciona la rama `main` y la carpeta `/ (root)`.
-5. Guarda. GitHub publicará el sitio en una URL del tipo `https://<tu-usuario>.github.io/<nombre-del-repositorio>/` en uno o dos minutos.
-
-También puedes abrir `index.html` directamente con doble clic en tu ordenador: el sitio funciona igual sin conexión a internet (salvo para cargar las tipografías de Google Fonts), aunque los enlaces entre páginas funcionan mejor si abres la carpeta con un servidor local o la sirves desde GitHub Pages.
 
 ## Origen
 
